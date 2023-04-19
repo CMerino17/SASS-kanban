@@ -1,0 +1,87 @@
+@use 'main.scss';
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif; }
+  * main {
+    width: 90%;
+    height: 1000px;
+    margin: auto;
+    background-image: url(../imgs/fondo.jpg);
+    background-size: cover;
+    padding: 5%; }
+    * main h1 {
+      color: white;
+      background-color: rgba(113, 182, 243, 0.519);
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: fit-content;
+      padding: 10px 20px;
+      border-radius: 10px;
+      font-size: 25px;
+      font-weight: 800;
+      border: 1px solid #71b6f3; }
+    * main #kanban {
+      width: 95%;
+      height: 95%;
+      margin-left: auto;
+      margin-right: auto; }
+      * main #kanban .column {
+        width: 300px;
+        height: fit-content;
+        background-color: rgba(255, 255, 255, 0.503);
+        margin: 20px 9px 0px 9px;
+        border-radius: 10px;
+        float: left; }
+        * main #kanban .column h2 {
+          padding: 20px 0px 20px 12px;
+          font-size: 22px; }
+        * main #kanban .column .card {
+          background-color: white;
+          margin-left: auto;
+          margin-right: auto;
+          width: 85%;
+          line-height: 40px;
+          height: fit-content;
+          padding-bottom: 60px;
+          margin-bottom: 10px;
+          border-radius: 10px;
+          padding-left: 20px;
+          padding-top: 30px; }
+          * main #kanban .column .card .equis {
+            background-color: red;
+            width: fit-content;
+            padding: 0px 5px;
+            border-radius: 50%;
+            margin-top: -25px;
+            margin-left: 230px;
+            font-size: 12px;
+            line-height: 20px; }
+          * main #kanban .column .card .tag {
+            color: white;
+            border-radius: 50%;
+            width: fit-content;
+            float: left;
+            margin-top: 15px;
+            margin-right: 5px;
+            line-height: 30px; }
+          * main #kanban .column .card .front {
+            background-color: #1bb11b;
+            padding: 0px 8px; }
+          * main #kanban .column .card .back {
+            background-color: orange;
+            padding: 0px 8px; }
+          * main #kanban .column .card .device {
+            background-color: #eded00;
+            padding: 0px 10px; }
+        * main #kanban .column .card:hover {
+          background-color: rgba(113, 182, 243, 0.672);
+          cursor: pointer;
+          color: white; }
+        * main #kanban .column .card:hover .tag {
+          color: #71b6f3; }
+        * main #kanban .column .card:hover .equis {
+          background-color: black; }
+
+/*# sourceMappingURL=main.css.map */

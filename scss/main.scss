@@ -1,0 +1,81 @@
+@import 'reglas';
+$primary-color: white;
+$front-color: rgb(27, 177, 27);
+$back-color: orange;
+$device-color: rgb(237, 237, 0);
+$padding-icon: 0px 8px;
+
+*{
+    @include general;
+    main{
+        width: 90%;
+        height: 1000px;
+        margin: auto;
+        background-image: url(../imgs/fondo.jpg);
+        background-size: cover;
+        padding: 5%;
+        h1{
+            color: $primary-color;
+            background-color: rgba(113, 182, 243, 0.519);
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: fit-content;
+            padding: 10px 20px;
+            border-radius: 10px;
+            font-size: 25px;
+            font-weight: 800;
+            border: 1px solid rgb(113, 182, 243);
+        }
+        #kanban{
+            @include cuerpoKanban;
+            .column{
+                @include columnas;
+                h2{
+                    padding: 20px 0px 20px 12px;
+                    font-size: 22px;
+                }
+                .card{
+                    @include cartas;
+                    .equis{
+                        background-color: red;
+                        width: fit-content;
+                        padding: 0px 5px;
+                        border-radius: 50%;
+                        margin-top: -25px;
+                        margin-left: 230px;
+                        font-size: 12px;
+                        line-height: 20px;
+                    }
+                    .tag{
+                        @include iconos;
+                    }
+                    .front{
+                        background-color: $front-color;
+                        padding: $padding-icon;
+                    }
+                    .back{
+                        background-color: $back-color;
+                        padding: $padding-icon;
+                    }
+                    .device{
+                        background-color: $device-color;
+                        padding: 0px 10px;
+                    }
+                    
+                }
+                .card:hover{
+                    background-color: rgba(113, 182, 243, 0.672);
+                    cursor: pointer;
+                    color: $primary-color;
+                }
+                .card:hover .tag{
+                    color: rgb(113, 182, 243);
+                }
+                .card:hover .equis{
+                    background-color: black;
+                }
+            }            
+        }
+    }
+}

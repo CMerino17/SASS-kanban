@@ -1,0 +1,42 @@
+@use 'main.scss';
+@mixin general(){
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+@mixin cuerpoKanban(){
+    width: 95%;
+    height: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+@mixin columnas(){
+    width: 300px;
+    height: fit-content;
+    background-color: rgba(255, 255, 255, 0.503);
+    margin: 20px 9px 0px 9px;
+    border-radius: 10px;
+    float: left;
+}
+@mixin cartas(){
+    background-color: $primary-color;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    line-height: 40px;
+    height: fit-content;
+    padding-bottom: 60px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-top: 30px;
+}
+@mixin iconos(){
+    color: $primary-color;
+    border-radius: 50%;
+    width: fit-content;
+    float: left;
+    margin-top: 15px;
+    margin-right: 5px;
+    line-height: 30px;
+}
